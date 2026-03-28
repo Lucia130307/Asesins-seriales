@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Iosevka Charon", monospace;
+}
+header{
+    width: 1366px;
+    height: 140px;
+    background-color: rgb(129, 63, 63);
+    margin: 0 auto;
+    padding-left: 30px;
+}
+h1{
+    font-family: "Rubik Dirt", system-ui;
+    font-size: 50px;
+    color: #8f0202;
+    text-shadow: 1px 1px 3px #ffd6d6;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav{
+    width: 1366px;
+    height: 50px;
+    background-color: rgb(80, 40, 40) ;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 240, 240);
+    padding: 10px 50px;
+    background-color: rgb(158, 103, 86);
+    transition: .5s;
+    font-size: 20px;
+    font-family: "Rubik Dirt", system-ui;
+}
+nav a:hover{
+    transform: scale(1.1);
+    color: rgb(255, 0, 0);
+    background-color: rgb(48, 14, 8);
+    box-shadow: 2px 2px 5px red ;
+}
+
+main{
+    width: 1366px;
+    height: auto;
+    background-image: linear-gradient(rgb(255, 247, 247) , rgba(95, 36, 36, 0.836));
+    background-image: -moz-linear-gradient( rgb(255, 247, 247) , rgba(95, 36, 36, 0.836));
+    background-image: -o-linear-gradient(rgb(255, 247, 247) , rgba(95, 36, 36, 0.836));
+    background-image: -webkit-linear-gradient(rgb(255, 247, 247) , rgba(95, 36, 36, 0.836));
+    background-color: rgb(226, 226, 226);
+    margin: 0 auto;
+}
+main h2{
+    font-size: 55px;
+    font-family: "Bowlby One SC", sans-serif;
+    color: rgb(44, 0, 0);
+}
+footer{
+    width: 1366px;
+    height: auto;
+    background-color: rgb(61, 6, 6);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+footer a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+footer img{
+    width: 100px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 5px #c24242;
+}
+.footer h2 {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.enlaces, .formulario{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: beige;
+  padding-right: 40px;
+}
+.referencias{
+    color: beige;
+    padding: 10px;
+}
+.referencias i {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.formulario input {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: none;
+  width: 180px;
+  background-color: #d9adad;
+  border-radius: 3px;
+}
+.formulario input:focus{
+  outline: none;
+  border: 1px solid pink;
+  background-color: #c24242;
+  color: rgb(234, 233, 233);
+}
+.formulario input:focus::placeholder{
+    color: bisque;
+}
+.formulario input[type="submit"] {
+  padding: 8px;
+  border: none;
+  background: rgb(179, 67, 86);
+  cursor: pointer;
+}
+.formulario input[type="submit"]:hover {
+  background: rgb(108, 0, 54);
+  color: rgb(255, 175, 158);
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/*inicio*/
+.inf{
+    padding-top: 20px;
+    font-size: large;
+}
+.que{
+    margin: 0 auto;
+    width: 1000px;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+.que h2, .por h2, .imp h2{
+    text-align: center;
+    font-family: "Iosevka Charon", monospace;
+}
+.porq{
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+  gap: 40px;                 
+  margin: 0 auto;       
+  padding: 60px;
+}
+.por{
+    padding-bottom: 60px;
+   width: 520px;
+}
+.imp{
+
+    color: #d9adad;
+    margin: 0 auto;
+    width: 1180px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*casos*/
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+}
+.asse{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.asse h2{
+    color: #9b7474;
+    font-size: 40px;
+}
+.ase{
+    width: 360px;
+    height: 360px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+.info{
+    width: 340px;
+    height: 340px;
+    background-color: rgba(31, 30, 31, 0.392);
+    margin: 0 auto;
+    position: absolute;
+    top: 200px;
+    transition: all 1s cubic-bezier(.34,1.56,.64,1);
+    padding: 30px;
+    color: beige;
+    margin-left: 10px;
+ 
+}
+.info:hover{
+    top: 20px;
+    background-color: rgba(39, 9, 9, 0.89);
+    color: rgb(231, 231, 231);
+    border: 2px solid rgb(89, 0, 0);
+    border-radius: 10px;
+    box-shadow: 4px 4px 25px rgba(104, 8, 8, 0.701);
+}
+h3, p{
+    margin: 8px;
+}
+.text{
+    width: 1070px;
+    height: 300px;
+    padding-top: 30px;
+    margin: 0 auto;
+    color: #d9adad;
+    padding-bottom: 30px;
+}
+.btn {
+  display: inline-block;
+  background: rgb(190, 147, 154);
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgba(21, 0, 0, 0.744);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(77, 36, 36, 0.717);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-content {
+  background: #150d0d;
+  color: rgb(241, 213, 213);
+  margin: 10% auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 20px;
+}
+.cerrar {
+  float: right;
+  text-decoration: none;
+  color: white;
+}
+
+/*tabla*/
+.vic{
+    margin: 0 auto;
+    width: 1180px;
+}
+.listas{
+  padding-bottom: 40px;
+  padding-top: 20px;
+  column-count: 6;
+  column-gap: 40px;
+}
+.titul{
+    font-family: "Iosevka Charon", monospace;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    width: 1150px;
+    height: 1000px;
+    padding-bottom: 20px;
+}
+th{
+    background-color: rgb(89, 51, 51);
+    color: bisque;
+}
+tr:nth-child(even){
+    background-color: rgb(255, 228, 228);
+}
+tr:nth-child(odd){
+    background-color: rgb(255, 190, 190);
+}
+td:not(:last-child){
+    text-align: center;
+    padding: 5px;
+}
+td:last-child{
+    padding: 20px;
+}
+
+/*analisis*/
+.todo{
+    margin: 0 auto;
+}
+.patrones{
+    width: 1000px;
+    margin: 0 auto;
+}
+.patrones h2, .repre h2, .met h2{
+    text-align: center;
+}
+.repre{
+    width: 1180px;
+    margin: 0 auto;
+}
+.repre img{
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+.met{
+  width: 950px;
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+  gap: 40px;                 
+  margin: 0 auto;       
+  padding-right: 10px;
+  padding-top: 80px;
+}
+.in{
+   width: 540px;
+   padding-bottom: 20px;
+   color: #d9adad;
+}
+.serie{
+    width: 415px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.me{
+      color: #d9adad;
+    height: auto;
+    margin: 0 auto;
+    width: 900px;
+    padding-bottom: 20px;
+}
